@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "app": "com.greenpoint.android.mc10086.activity",
+  "rules": [
+    {
+      "id": "china-mobile-splash",
+      "name": "中国移动 · 开屏跳过控件",
+      "action": "click",
+      "target": {
+        "viewId": "com.greenpoint.android.mc10086.activity:id/video_time_skip"
+      },
+      "description": "在开屏期间点击右上角的跳过按钮。按钮文字可能是「3 跳过」。"
+    }
+  ]
+}

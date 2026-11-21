@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "app": "com.MobileTicket",
+  "rules": [
+    {
+      "id": "railway-splash",
+      "name": "铁路12306 · 开屏跳过控件",
+      "action": "click",
+      "target": {
+        "viewId": "com.MobileTicket:id/tv_skip"
+      },
+      "conditions": {
+        "adViewId": "com.MobileTicket:id/img_adContent",
+        "adDescription": "广告"
+      },
+      "description": "确认是铁路12306开屏广告后，点击右上角的跳过按钮。"
+    }
+  ]
+}

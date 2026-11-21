@@ -1,0 +1,14 @@
+/work/adskipper-android/adskipper-signing*
+/work/adskipper-android/classes/
+/work/adskipper-android/classes.jar
+/work/adskipper-android/classes.dex
+/work/adskipper-android/resources.zip
+/work/adskipper-android/rule-assets/
+/work/adskipper-android/*.apk
+/work/adb-tools/
+/work/gallery-platform/
+/work/gallery-build-tools/
+/outputs/*.apk
+/outputs/手机免广告助手日志/
+/outputs/baidu-accessibility-trace*.xml
+__pycache__/

@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "app": "com.sdu.didi.psnger",
+  "rules": [
+    {
+      "id": "didi-promotion",
+      "name": "滴滴出行 · 首页促销弹窗",
+      "action": "click",
+      "target": {
+        "viewId": "com.sdu.didi.psnger:id/iv_close"
+      },
+      "conditions": {
+        "parentViewId": "com.sdu.didi.psnger:id/root_rl",
+        "panelViewId": "com.sdu.didi.psnger:id/webview_layout",
+        "panelDescription": "广告弹窗"
+      },
+      "description": "点击滴滴首页领券广告弹窗右上角的关闭按钮。"
+    },
+    {
+      "id": "didi-delivery-promotion",
+      "name": "滴滴出行 · 送货优惠券弹窗",
+      "action": "click",
+      "target": {
+        "viewId": "com.sdu.didi.psnger:id/popClose",
+        "description": "关闭弹窗"
+      },
+      "conditions": {
+        "containerViewId": "com.sdu.didi.psnger:id/root_rl"
+      },
+      "description": "确认是滴滴送货优惠券弹窗后，点击卡片下方的关闭按钮。"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+<resources>
+    <string name="name">手机免广告助手</string>
+    <string name="description">仅在所选应用打开后的几秒内识别并点击屏幕角落的开屏跳过按钮。界面内容只在本机处理。</string>
+</resources>

@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "app": "ctrip.android.view",
+  "rules": [
+    {
+      "id": "ctrip-splash",
+      "name": "携程旅行 · 开屏跳过广告",
+      "action": "click",
+      "target": {
+        "viewId": "ctrip.android.view:id/a",
+        "text": "跳过广告"
+      },
+      "description": "在开屏期间匹配右上角的「跳过广告」。控件不可点击时，在文字控件的实际中心处模拟触屏。"
+    },
+    {
+      "id": "ctrip-promotion",
+      "name": "携程旅行 · 首页促销弹窗",
+      "action": "click",
+      "target": {
+        "viewId": "ctrip.android.view:id/a"
+      },
+      "conditions": {
+        "adDescription": "广告素材",
+        "ctaText": "立刻领取"
+      },
+      "description": "确认首页促销弹窗后，点击广告卡片上方靠右的小型关闭控件。"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="local.adskipper" android:versionCode="62" android:versionName="1.59">
+    <uses-sdk android:minSdkVersion="29" android:targetSdkVersion="35"/>
+    <queries><intent><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent></queries>
+    <application android:label="@string/name" android:icon="@mipmap/adskipper_icon" android:roundIcon="@mipmap/adskipper_icon" android:allowBackup="false" android:theme="@android:style/Theme.Material.Light.NoActionBar">
+        <activity android:name=".MainActivity" android:exported="true" android:excludeFromRecents="true">
+            <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter>
+        </activity>
+        <activity android:name=".HistoryActivity" android:exported="false"/>
+        <service android:name=".SkipService" android:exported="true" android:label="@string/name" android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter><action android:name="android.accessibilityservice.AccessibilityService"/></intent-filter>
+            <meta-data android:name="android.accessibilityservice" android:resource="@xml/skip_service"/>
+        </service>
+    </application>
+</manifest>

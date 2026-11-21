@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "app": "com.yipiao",
+  "rules": [
+    {
+      "id": "zhixing-splash",
+      "name": "智行火车票 · 开屏跳过广告",
+      "action": "click",
+      "target": {
+        "viewId": "com.yipiao:id/arg",
+        "text": "跳过广告"
+      },
+      "description": "匹配开屏右上角的跳过广告控件，不可点击时点控件中心。"
+    },
+    {
+      "id": "zhixing-promotion",
+      "name": "智行火车票 · 回归礼包弹窗",
+      "action": "click",
+      "target": {
+        "text": "icon_hc_xktc_close@3x"
+      },
+      "description": "点击礼包弹窗底部的关闭图标。"
+    },
+    {
+      "id": "zhixing-native-promotion",
+      "name": "智行火车票 · 首页促销弹窗",
+      "action": "click",
+      "target": {
+        "viewId": "com.yipiao:id/arg",
+        "className": "android.widget.ImageView"
+      },
+      "description": "匹配弹窗窗口内位于活动按钮下方居中的关闭图标。"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "app": "com.xiaomi.market",
+  "rules": [
+    {
+      "id": "xiaomi-market-splash",
+      "name": "小米应用商店 · 开屏跳过广告",
+      "action": "click",
+      "target": {
+        "windowPackage": "com.miui.systemAdSolution",
+        "textPattern": "跳过广告(?:\\s*[0-9]{1,2}\\s*秒?)?"
+      },
+      "description": "在小米智能服务的广告窗口里，点击右上角明确写着「跳过广告」的控件。"
+    }
+  ]
+}

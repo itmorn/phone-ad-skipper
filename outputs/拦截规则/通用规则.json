@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "app": "*",
+  "rules": [
+    {
+      "id": "generic-skip",
+      "name": "通用规则 · 跳过文字",
+      "action": "click",
+      "target": {
+        "textPattern": "(?iu)(?:(?:跳过(?:广告)?|skip(?: ad)?)(?:[\\s·|:：]*(?<seconds>[0-9]{1,2})\\s*(?:秒|s)?)?|(?<leadingSeconds>[0-9]{1,2})\\s*(?:秒|s)?[\\s·|:：]*(?:跳过(?:广告)?|skip(?: ad)?))"
+      },
+      "description": "点击开屏时屏幕角落写着「跳过」或 Skip 的控件。倒计时可以在文字前面或后面。"
+    },
+    {
+      "id": "generic-promotion",
+      "name": "通用规则 · 关闭促销弹窗",
+      "action": "click",
+      "target": {
+        "closeTextPattern": "(?iu)(?:关闭(?:弹窗|广告)?|×|close(?: ad| dialog)?)",
+        "promotionTextPattern": "(?:免费领取|立即领券|点击领券|立即抢购)"
+      },
+      "description": "在开屏检查期间，点击促销卡片边缘可点击的关闭控件。"
+    }
+  ]
+}

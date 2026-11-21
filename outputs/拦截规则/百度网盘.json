@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "app": "com.baidu.netdisk",
+  "rules": [
+    {
+      "id": "baidu-splash",
+      "name": "百度网盘 · 开屏跳过控件",
+      "action": "click",
+      "target": {
+        "viewIds": [
+          "com.baidu.netdisk:id/vilon_close_text",
+          "com.baidu.netdisk:id/vilon_close_miss"
+        ]
+      },
+      "description": "点击百度网盘的开屏跳过按钮。第一项是文字控件，第二项是可点击按钮。"
+    },
+    {
+      "id": "baidu-swipe-ad",
+      "name": "百度网盘 · 开屏广告特征",
+      "action": "click",
+      "target": {
+        "minCenterX": 0.82,
+        "maxCenterY": 0.17,
+        "maxWidth": 0.2
+      },
+      "conditions": {
+        "adText": "跳转至详情页或第三方应用"
+      },
+      "description": "启动期间读到广告跳转提示时，点击右上角唯一的小型可点击控件。"
+    },
+    {
+      "id": "baidu-promotion",
+      "name": "百度网盘 · 首页促销弹窗",
+      "action": "click",
+      "target": {
+        "viewId": "com.baidu.netdisk:id/iv_close"
+      },
+      "description": "点击百度网盘首页促销弹窗的关闭按钮。"
+    }
+  ]
+}
