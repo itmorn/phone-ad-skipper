@@ -1,3 +1,5 @@
+<p><img src="work/adskipper-android/res/mipmap-xxxhdpi/adskipper_icon.png" alt="手机免广告助手图标" width="96" height="96"></p>
+
 # 手机免广告助手
 
 这是一个用于学习 Android 无障碍服务和界面自动化的个人项目。助手根据规则识别开屏广告的「跳过」按钮，以及部分首页促销弹窗的关闭按钮，并代为点击。项目仍在完善中。
