@@ -14,6 +14,18 @@
 - 在 Windows 上构建需要 JDK、Android SDK Platform 35 和 Android Build Tools。按 [构建脚本](work/build-adskipper.ps1) 所用目录准备依赖后，运行 `pwsh -File work/build-adskipper.ps1`，生成 `outputs/phone-adskipper.apk`。
 - 电脑控制台用于调试。需要采集日志时，连接自己的测试设备，在 [采集脚本](work/capture-adskipper-logs.ps1) 中通过 `-Serial` 参数指定 ADB 设备。
 
+## 用大模型协助打包 APK
+
+先克隆这个仓库，或从 GitHub 下载源码 ZIP 并解压。然后用能访问本地项目并运行终端命令的 AI 编程助手打开项目目录。普通聊天模型也可以提供命令，由你在电脑上执行。
+
+可以把下面这段提示词发给助手。
+
+> 请在当前项目目录里帮我构建手机免广告助手的 APK。先阅读 README 和 `work/build-adskipper.ps1`，检查 Java、PowerShell 和 Android SDK 构建依赖。按脚本要求准备 Android SDK Platform 35 和 Build Tools，再运行构建脚本。请用本地生成的签名密钥签名，验证 APK 签名，并告诉我生成的 APK 完整路径。签名密钥和密码留在本地。最后给我手动安装步骤。
+
+构建成功后，将 `outputs/phone-adskipper.apk` 传到自己的 Android 手机上，点开安装。如果系统提示需要允许当前文件管理器安装应用，按提示操作即可。安装后打开助手，开启对应的无障碍服务，勾选希望跳过广告的应用，并打开首页「总开关」。
+
+以后自行打包更新时，保留并使用第一次构建生成的签名密钥。Android 要求覆盖安装的 APK 使用相同签名。
+
 ## 使用风险
 
 - **自动点击可能漏判或误判。** 应用更新、弹窗布局变化、控件加载延迟都可能让规则失效。进行支付、下单或填写重要信息时，可先暂停拦截。
